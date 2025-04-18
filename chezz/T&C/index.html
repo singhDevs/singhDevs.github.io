@@ -3,53 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chezz Terms & Conditions</title>
+  <title>Chezz Terms & Privacy Policy</title>
   <style>
+
+    h1, h2, h3 {
+      display: flex;
+      align-items: center;
+    }
+
+    h1::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      background: url('https://github.com/user-attachments/assets/6641ba14-3075-47b7-863e-1789771b637b') no-repeat center center;
+      background-size: contain;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+    .sidebar { position: fixed; top: 0; left: 0; width: 240px; height: 100vh; background: #f9f9f9; padding: 20px; overflow-y: auto; border-right: 1px solid #eee; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar ul ul { padding-left: 20px; }
+    .sidebar a { color: #333; text-decoration: none; display: block; padding: 5px 0; font-size: 0.95rem; }
+    .sidebar a:hover { color: #0066cc; }
     .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
     h1 { font-size: 2rem; margin-bottom: 10px; color: #222; }
     .last-updated { font-size: 0.9rem; color: #777; margin-bottom: 30px; }
     h2 { font-size: 1.25rem; margin-top: 25px; margin-bottom: 10px; color: #444; }
+    h3 { font-size: 1.1rem; margin-top: 20px; margin-bottom: 10px; color: #555; }
     p, li { font-size: 1rem; margin-bottom: 10px; }
     ol, ul { margin-left: 20px; margin-bottom: 20px; }
     li > ol, li > ul { margin-left: 20px; margin-top: 5px; }
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
     .highlight { font-weight: bold; background-color: #fffbdd; border-radius: 3px; padding: 0 3px; }
     .contact a { display: inline-flex; align-items: center; margin: 0 8px; font-size: 1rem; }
     .contact img { width: 20px; height: 20px; margin-right: 6px; filter: invert(10%); }
     footer { text-align: center; margin-top: 40px; font-size: 0.85rem; color: #aaa; }
+    @media (max-width: 768px) {
+      .sidebar { position: static; width: 100%; height: auto; border-right: none; border-bottom: 1px solid #eee; }
+      .container { margin: 20px; }
+    }
   </style>
 </head>
 <body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#terms">Terms & Conditions</a>
+        <ul>
+          <li><a href="#terms-1">1. Introduction</a></li>
+          <li><a href="#terms-2">2. License to Use the App</a></li>
+          <li><a href="#terms-3">3. Intellectual Property</a>
+            <ul>
+              <li><a href="#terms-3-3">3.3. Third-Party Content</a></li>
+            </ul>
+          </li>
+          <li><a href="#terms-4">4. User Conduct</a></li>
+          <li><a href="#terms-5">5. In-App Purchases and Payments</a></li>
+          <li><a href="#terms-6">6. Privacy</a></li>
+          <li><a href="#terms-7">7. Disclaimers and Limitation of Liability</a></li>
+          <li><a href="#terms-8">8. Updates and Amendments</a></li>
+          <li><a href="#terms-9">9. Termination</a></li>
+          <li><a href="#terms-10">10. Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="#privacy">Privacy Policy</a>
+        <ul>
+          <li><a href="#privacy-1">1. Introduction</a></li>
+          <li><a href="#privacy-2">2. Data Collection</a></li>
+          <li><a href="#privacy-3">3. Use of Data</a></li>
+          <li><a href="#privacy-4">4. Data Storage and Security</a></li>
+          <li><a href="#privacy-5">5. Data Sharing</a></li>
+          <li><a href="#privacy-6">6. User Rights</a></li>
+          <li><a href="#privacy-7">7. Changes to This Policy</a></li>
+          <li><a href="#privacy-8">8. Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <div class="container">
-    <h1>Terms & Conditions</h1>
-    <p class="last-updated">Last Updated: April 18, 2025</p>
+    <h1 id="terms">Terms & Conditions</h1>
+    <p class="last-updated">Last Updated: April 19, 2025</p>
 
-    <h2>1. Introduction</h2>
-    <p>Welcome to <span class="highlight">Chezz</span>, a chess game Android app ("App") developed by <span class="highlight">singhDevs (Guransh Singh)</span>. These Terms and Conditions ("Terms") govern your use of the App. By downloading, installing or using <span class="highlight">Chezz</span>, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the App.</p>
+    <h2 id="terms-1">1. Introduction</h2>
+    <p>Welcome to <span class="highlight">Chezz</span>, a chess game Android app ("App") developed by <span class="highlight">Guransh Singh (singhDevs)</span>. These Terms and Conditions ("Terms") govern your use of the App. By downloading, installing or using <span class="highlight">Chezz</span>, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the App.</p>
 
-    <h2>2. License to Use the App</h2>
+    <h2 id="terms-2">2. License to Use the App</h2>
     <ol>
       <li>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install and use the App on your personal Android device for your private, non-commercial purposes.</li>
       <li>You may not copy, modify, distribute, sell, lease, sublicense, reverse engineer, decompile or otherwise attempt to extract the source code of the App.</li>
     </ol>
 
-    <h2>3. Intellectual Property</h2>
+    <h2 id="terms-3">3. Intellectual Property</h2>
     <ol>
       <li>All intellectual property rights in the App, including designs, graphics, logos, text and software, are owned by us or our licensors.</li>
       <li>You acknowledge that the App contains proprietary and confidential information protected by applicable intellectual property and other laws.</li>
     </ol>
 
-    <h3>3.3. Third-Party Content</h3>
+    <h3 id="terms-3-3">3.3. Third-Party Content</h3>
     <ol>
       <li>The App includes animations obtained from LottieFiles and SVG graphics sourced from svgrepo.com. All rights in these animations and graphics belong to their respective owners.</li>
       <li>Use of LottieFiles animations is governed by LottieFiles’ licensing terms: <a href="https://lottiefiles.com/page/license" target="_blank">https://lottiefiles.com/page/license</a>. Vectors and icons are from <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a>.</li>
       <li>These third-party assets are used under the applicable licenses; we claim no ownership over them.</li>
     </ol>
 
-    <h2>4. User Conduct</h2>
+    <h2 id="terms-4">4. User Conduct</h2>
     <ol>
       <li>You agree not to:
         <ul>
@@ -62,52 +123,95 @@
       <li>We reserve the right to suspend or terminate your access to the App if you violate these Terms or engage in any conduct that harms our reputation or interests.</li>
     </ol>
 
-    <h2>5. In-App Purchases and Payments</h2>
+    <h2 id="terms-5">5. In-App Purchases and Payments</h2>
     <ol>
       <li>If the App offers in-app purchases, you agree to pay all fees and applicable taxes associated with those purchases.</li>
       <li>All payments are processed through <span class="highlight">Google Play</span> and are subject to Google's payment policies. We do not store your payment information.</li>
     </ol>
 
-    <h2>6. Privacy</h2>
+    <h2 id="terms-6">6. Privacy</h2>
     <ol>
-      <li>Use of the App may involve collection and processing of personal data. Our Privacy Policy explains how we collect, use, share and protect your information.</li>
+      <li>Use of the App may involve collection and processing of personal data. Please see our <a href="#privacy">Privacy Policy</a> below for details on how we collect, use, share, and protect your information.</li>
       <li>By using the App, you consent to the collection and use of your information as described in our Privacy Policy.</li>
     </ol>
 
-    <h2>7. Disclaimers and Limitation of Liability</h2>
+    <h2 id="terms-7">7. Disclaimers and Limitation of Liability</h2>
     <ol>
       <li>The App is provided "as is" and "as available" without warranties of any kind, express or implied.</li>
       <li>We do not warrant that the App will be uninterrupted, error-free, or free from viruses or other harmful components.</li>
       <li>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special or consequential damages arising out of or in connection with your use of the App.</li>
     </ol>
 
-    <h2>8. Updates and Amendments</h2>
+    <h2 id="terms-8">8. Updates and Amendments</h2>
     <ol>
       <li>We may update or modify the App and these Terms at any time. We will notify you of material changes by posting the updated Terms in the App or on our website.</li>
       <li>Your continued use of the App after changes take effect constitutes acceptance of the new Terms.</li>
     </ol>
 
-    <h2>9. Termination</h2>
+    <h2 id="terms-9">9. Termination</h2>
     <ol>
       <li>You may uninstall and stop using the App at any time.</li>
       <li>We may terminate or suspend your license and access to the App at our discretion, without notice, for any violation of these Terms.</li>
     </ol>
 
-    <h2>10. Contact Us</h2>
+    <h2 id="terms-10">10. Contact Us</h2>
     <p>If you have any questions or feedback about these Terms or the App, please contact us at:</p>
-    <p>Email: <a href="mailto:guransh.workspace@gmail.com">guransh.workspace@gmail.com</a><br>
+    <p>Email: <a href="mailto:guransh.workspace@gmail.com">guransh.workspace@gmail.com</a></p>
 
-        <footer>
-            <div class="contact" style="margin-bottom:10px;">
-              <a href="https://github.com/singhDevs" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-              </a>
-              <a href="https://x.com/guranshSinghh" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X">
-              </a>
-            </div>
-            &copy; 2025 singhDevs. All rights reserved.
-          </footer>
+    <hr>
+
+    <h1 id="privacy">Privacy Policy</h1>
+    <p class="last-updated">Last Updated: April 19, 2025</p>
+
+    <h2 id="privacy-1">1. Introduction</h2>
+    <p>This Privacy Policy explains how <span class="highlight">Chezz</span> ("App"), developed by <span class="highlight">Guransh Singh (singhDevs)</span>, collects, uses, stores, and protects your personal information. By using the App, you consent to the practices described in this policy.</p>
+
+    <h2 id="privacy-2">2. Data Collection</h2>
+    <p>We collect the following personal data:</p>
+    <ul>
+      <li>Email address and password (if you create an account using email/password).</li>
+      <li>Google ID (if you sign in using Google OAuth).</li>
+      <li>Game-related data, such as your chess game history, ratings and progress.</li>
+    </ul>
+
+    <h2 id="privacy-3">3. Use of Data</h2>
+    <p>Your data is used to:</p>
+    <ul>
+      <li>Provide and maintain the App's functionality, including account authentication and game features.</li>
+      <li>Improve the App and user experience.</li>
+      <li>Communicate with you regarding updates or issues.</li>
+    </ul>
+
+    <h2 id="privacy-5">4. Data Sharing</h2>
+    <p>We do not share your personal data with third parties, except:</p>
+    <ul>
+      <li>With Google for authentication purposes when you sign in with Google</li>
+    </ul>
+
+    <h2 id="privacy-6">5. User Rights</h2>
+    <ul>
+      <li>You can request to delete your account and associated data by emailing us at <a href="mailto:guransh.workspace@gmail.com">guransh.workspace@gmail.com</a>.</li>
+      <li>Upon deletion, all personal data will be removed from our servers within 7 days.</li>
+      <li><strong>Note:</strong> We do not offer partial data deletion; only complete account deletion is available.</li>
+    </ul>
+
+    <h2 id="privacy-7">6. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+
+    <h2 id="privacy-8">7. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:guransh.workspace@gmail.com">guransh.workspace@gmail.com</a>.</p>
+
+    <footer>
+      <div class="contact" style="margin-bottom:10px;">
+        <a href="https://github.com/singhDevs" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/guranshSinghh" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X">
+        </a>
+      </div>
+      © 2025 Guransh Singh. All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
